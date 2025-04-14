@@ -1,0 +1,60 @@
+1.Semantic Tags and NonSemantic Tags-
+	Semantic tags has meaning into it, it will tell you the purposes of this tags in your websites and the nonSemantic one doesn't mean
+	anything nor they will tell you the purposes of it, basically we use semantic tags for website layout and nonSemantic for design, 
+	functionality everything.
+
+2.header tags - 
+	h1 to h6, this has differenct font-size, line-height, font-weight etc according to there header number, ususally used for 
+	heading purposes in a website.
+
+3.p tag - 
+	basically a paragraph tag used for showing content.
+
+4.div tag - 
+	it is basically provide a empty container in which u can put anything and by styling you can do anything with this contatiner.
+
+5.Semantic Tags Example - Section, aside, header, navbar, footer, main, article etc.
+
+6.Non-semantic Tags Example -  h1 to h6, p, div etc.
+
+
+Some Viva Question --
+
+1. What is the difference between Html 4 and Html 5?
+2. What is the difference between checkbox and radio input field?
+3. Why do we use <!DOCTYPE> html in the first line of our code?
+4. What is meta Data?
+5. What is the reason to use box-sizing: border-box?
+6. What will happen if we don't use the box-sizing: border-box?
+7. How to center a div?
+8. What is Flex? why do we use it?
+9. What is the difference between flex and grid ?
+10.When to use flex and when to use Grid?
+11.How Many Lists are there? What is difference between ordered list and unordered list?
+12.How many display properties are there? What is the difference between inline-block and inline element?
+13.What is the 3 types of css that we can use in a html file?
+14.What is universal selector?
+15.What !important do in css?
+16.What margin:auto do in css?
+17.What is z-index in css?
+18.What is the difference between absolute and relative ?
+19.What is the difference between fixed and sticky?
+20.What is the difference between align-self and align-items?
+21.What is the difference between justify-content and align-items?
+22.on which axes the justify-content will works if we use flex-direction:column?
+23.What is the difference between display:none and visibility: hidden?
+24.What if we use padding: 24px 0 22px, draw me a box with this padding code;
+25.What is the difference between padding-inline and padding-block?
+26.How to open an anchor tag in a new tab?
+27.What is the difference between div and section tag?
+28.What is the difference between del and strike tag?
+29.What is the difference between id and class?
+30.What is flex-grow and flex-shrink?
+31.What this border-collapse:collapse do?
+32.What is the difference between child selector and Descendent Selector?
+33.What is Genaral Sibling and Adjacent Sibling Selector?
+34.What is the difference between text-area and input:text?
+35.What is Attribute selector? Show me an example of how you can use them for styling in css?
+36.What is keyframe in css?
+37.what this transform:scale(2) do in css?
+38.what backdrop-filter:blur(10px) do in css?

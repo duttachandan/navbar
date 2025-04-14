@@ -1,0 +1,133 @@
+/* CSS DEMO: Includes text, font, position, flex, grid, background, and image properties */
+
+
+/* 
+the asterisk * is called the universal selector. 
+It selects every single element on the page — 
+no matter what tag, class, or ID they have.
+*/
+
+* {
+  margin: 0; /* Removes default margin from all elements */
+  padding: 0; /* Removes default padding from all elements */
+  box-sizing: border-box;
+  /* Ensures that padding and borders are included in the total width/height of elements. 
+  This makes layout calculations much easier and more predictable*/
+}
+
+/* TEXT PROPERTIES */
+p.text-demo {
+  color: blue; /* Sets the text color; accepts color names, hex, rgb, hsl */
+  text-align: center; /* Aligns text horizontally; values: left, right, center, justify */
+  text-decoration: underline; /* Adds decoration to text; values: none, underline, overline, line-through */
+  text-transform: uppercase; /* Controls text case; values: none, capitalize, uppercase, lowercase */
+  letter-spacing: 2px; /* Adjusts spacing between letters; values in px, em, etc. */
+  word-spacing: 5px; /* Adjusts spacing between words; values in px, em, etc. */
+  line-height: 1.5; /* Controls vertical spacing between lines of text; values: number, px, em */
+  direction: rtl; /* Sets text direction; values: ltr (default), rtl */
+  white-space: nowrap; /* Controls text wrapping; values: normal, nowrap, pre, pre-line, pre-wrap */
+}
+
+/* FONT PROPERTIES */
+p.font-demo {
+  font-family: "Arial", sans-serif; /* Specifies font family; multiple fallbacks allowed */
+  font-size: 18px; /* Sets the size of the font; values in px, em, rem, % */
+  font-style: italic; /* Defines style of the font; values: normal, italic, oblique */
+  font-variant: small-caps; /* Enables small-caps effect; values: normal, small-caps */
+  font-weight: bold; /* Controls font thickness; values: normal, bold, 100–900 */
+}
+
+/* BACKGROUND PROPERTIES */
+div.background-demo {
+  background-color: lightblue; /* Sets background color; accepts named, hex, rgb, hsl values */
+  background-image: url("example.jpg"); /* Adds background image; url must be valid */
+  background-size: cover; /* Defines how background image is scaled; values: auto, cover, contain */
+  background-repeat: no-repeat; /* Prevents image from repeating; values: repeat, no-repeat, repeat-x, repeat-y */
+  background-position: center; /* Positions image in container; values: left, right, top, bottom, center */
+  background-attachment: fixed; /* Fixes background during scroll; values: scroll, fixed, local */
+}
+
+/* IMAGE PROPERTIES */
+img.image-demo {
+  width: 200px; /* Sets width of image; values in px, %, em, etc. */
+  height: auto; /* Automatically scales height based on width */
+  object-fit: cover; /* Defines how content of replaced elements (like <img>) is resized; 
+  values: fill, contain, cover, none, scale-down */
+  border-radius: 10px; /* Rounds the corners of the image; values in px, % */
+  display: block; /* Removes inline spacing around image; values: inline, block, inline-block */
+}
+
+/* POSITION PROPERTIES */
+div.position-demo {
+  position: relative; /* Sets positioning method; values: static, relative, absolute, fixed, sticky */
+  top: 20px; /* Moves element down 20px from its normal position */
+  left: 10px; /* Moves element 10px from the left */
+  z-index: 10; /* Sets stack order; higher values appear on top */
+}
+
+/* FLEX PROPERTIES */
+div.flex-container {
+  display: flex; /* Defines a flex container; enables flex properties on children */
+  flex-direction: row; /* Sets direction of flex items; values: row, row-reverse, column, column-reverse */
+  justify-content: space-between; /* Aligns items horizontally; values: flex-start, center, space-between, etc. */
+  align-items: center; /* Aligns items vertically; values: stretch, center, flex-start, flex-end, baseline */
+  flex-wrap: wrap; /* Allows items to wrap; values: nowrap, wrap, wrap-reverse */
+  gap: 10px; /* Sets spacing between items; values in px, em, etc. */
+}
+div.flex-item {
+  flex: 1; /* Sets flex grow/shrink/basis; values: none, auto, or flex shorthand (grow shrink basis) */
+}
+
+/* GRID PROPERTIES */
+div.grid-container {
+  display: grid; /* Defines a grid container */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Defines 3 equal columns; values: px, %, fr, auto */
+  grid-template-rows: 100px 200px; /* Defines row heights; values in px, %, fr, auto */
+  gap: 20px; /* Sets gap between rows and columns */
+  justify-items: center; /* Aligns grid items horizontally; values: start, end, center, stretch */
+  align-items: start; /* Aligns grid items vertically; values: start, end, center, stretch */
+}
+div.grid-item {
+  grid-column: span 2; /* Spans the item across 2 columns */
+  grid-row: 1; /* Places the item in row 1 */
+}
+
+/* ADVANCED FLEX EXAMPLE: AXIS AND BEHAVIOR DETAILS */
+.parent {
+  height: 100vh; /* Makes parent div full viewport height */
+  width: 100%; /* Full width of the parent */
+  background: black; /* Sets background color */
+  display: flex; /* Applies flexbox layout */
+  flex-direction: column; /* Aligns children in a column (vertical) */
+  /* justify-content aligns children on the main axis (vertical now due to column) */
+  /* align-items aligns children on the cross axis (horizontal now) */
+  /* flex-wrap allows wrapping if children overflow the container */
+}
+
+.box {
+  height: 200px; /* Fixed height */
+  min-width: 200px; /* Minimum width before wrapping */
+  background: red; /* Sets background color */
+  border: 1px solid white; /* Adds white border */
+  font-size: 4rem; /* Large text size */
+}
+
+.parent > div:nth-child(1) {
+  align-self: end; /* Aligns this item to the end on the cross axis */
+  /* flex-grow: 1; — Item grows to occupy available space */
+  /* flex-basis: 70%; — Initial size before grow/shrink (affects height in column) */
+  /* flex-shrink: 1; — Item shrinks if needed (default value is 1) */
+}
+
+.parent > div:nth-child(2) {
+  align-self: start; /* Aligns to start of cross axis */
+}
+
+.parent > div:nth-child(3) {
+  align-self: center; /* Centers this item on the cross axis */
+}
+
+
